@@ -5,9 +5,12 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
+  <script src='http://use.edgefonts.net/frijole.js'></script>
   <script src="js/scripts.js"></script>
 </head>
 <body>
+  <div class="container">
+  <div id=intro>
   <h2>The Fortune Shack.</h2>
   <div id="typewriter">
     <p>
@@ -21,9 +24,10 @@
       <button class="exit">No thanks</button>
     </p>
   </div>
+  </div>
   <form id="fortune-survey">
     <div class="form-group">
-      <p><em>Great, now fill this out! (Only $20.99 without taxes)</em></p>
+      <p><span id="start">Great, now fill this out! (Only $20.99 without taxes)</span></p>
       <p>have any of these happened within the past year?:</p>
         <input type="checkbox" name="unlucky-event" value="ladder"> walking under a ladder.<br>
         <input type="checkbox" name="unlucky-event" value="umbrella"> open an umbrella indoors.<br>
@@ -55,7 +59,13 @@
         <input type="checkbox" name="lucky-event" value="penny"> find a penny on the street.<br>
         <input type="checkbox" name="lucky-event" value="goldfish"> win a goldfish at the fair.<br>
       </div>
-      <button type="submit">Submit Survey</button>
+      <div class="form-group">
+        <label for="ghost_radio">do you believe in ghosts?</label>
+        <input type="radio" name="ghost"> yes</input>
+        <input type="radio" name="ghost">no</input>
+        
+      </div>
+      <button type="submit">I'm Ready</button>
     </form>
     </div>
 </body>
