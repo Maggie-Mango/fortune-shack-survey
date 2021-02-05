@@ -79,6 +79,13 @@ span {
   float: center;
 }
 
+#response {
+  font-family: Courier;
+  text-align: center;
+  font-size: 200%;
+  position:absolute;
+}
+
 #leave {
   display: none;
   font-family: Courier;
