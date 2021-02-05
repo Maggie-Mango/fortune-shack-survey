@@ -79,6 +79,12 @@ span {
   float: center;
 }
 
+#leave {
+  display: none;
+  font-family: Courier;
+  text-align: center;
+  font-size: 300%;
+}
 #start {
   font-family: "Courier";
   letter-spacing: .15em;
